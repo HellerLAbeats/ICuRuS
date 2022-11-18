@@ -31,9 +31,6 @@ name="Drd1_A2a_K4_QN"
 matrix="${name}_const_TSS__matrix.gz"
 outPDF="${name}_const_TSS_.pdf"
 
-#/home/szhang32/my_python3.6.3/bin/deepTools/computeMatrix reference-point --referencePoint center -S $D1 $A2a $D1IgG $A2aIgG -R $regions -a 5000 -b 5000 -o $matrix
-
-#/home/szhang32/my_python3.6.3/bin/deepTools/plotProfile --refPointLabel "TSS" --samplesLabel "D1_K4" "A2a_K4" "D1_IgG" "A2a_IgG" --plotTitle "D1 and A2a QN H3K4me3 signal TSS" --yAxisLabel "Normalized read count" -m $matrix -o $outPDF --perGroup
 
 /home/szhang32/my_python3.6.3/bin/deepTools/computeMatrix reference-point --referencePoint center -S $D1 $A2a -R $regions -a 5000 -b 5000 -o $matrix
 
