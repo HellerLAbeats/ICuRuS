@@ -30,9 +30,6 @@ matrix="${name}_const_TSS_matrix.gz"
 outPDF="${name}_density_plot_const_TSS.pdf"
 
 # compute matrix
-#/home/szhang32/my_python3.6.3/bin/deepTools/computeMatrix scale-regions --startLabel start --endLabel end -S $D1K27 $A2aK27 $D1IgG $A2aIgG -R $regions -a 5000 -b 5000 -o $matrix
-
-#/home/szhang32/my_python3.6.3/bin/deepTools/plotProfile --startLabel start --endLabel end --samplesLabel "D1_K27" "A2a_K27" "D1_IgG" "A2a_IgG" --plotTitle "CUTandRun H3K27me3 signal around peaks" --yAxisLabel "Normalized read count" -m $matrix -o $outPDF --perGroup
 
 /home/szhang32/my_python3.6.3/bin/deepTools/computeMatrix scale-regions --startLabel start --endLabel end -S $D1K27 $A2aK27 -R $regions -a 5000 -b 5000 -o $matrix
 
